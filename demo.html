@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>expandable search box</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+<body>
+<div class="container">
+	<div class="expand">
+		<input type="text" name="search" placeholder="Type your text" id="search" class="input">
+		<i class="fa fa-search"></i>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function(){
+        $(".fa-search").click(function(){
+        	$(".expand, .input").toggleClass("active");
+        	$(".input").focus();
+        });
+	});
+</script>
+</body>
+</html>
